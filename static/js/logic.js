@@ -96,7 +96,7 @@ d3.json(url).then(function (data) {
     }).addTo(earthquakes);
     earthquakes.addTo(myMap);
 
-// ad
+// adding legend 
     let legend = L.control({
         position: "bottomright"
     });
