@@ -1,3 +1,2 @@
 # Leaflet Challenge 15
 
-## 

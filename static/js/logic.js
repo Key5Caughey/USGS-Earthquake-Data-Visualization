@@ -34,8 +34,9 @@ L.control.layers(baseMaps, overlays).addTo(myMap);
 
 url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// Loading data into d3/ using then (promise) function
-// create function to style map
+// Loading data into d3/ using then (promise) function passing data as argument
+// create function to style map, getting depth for color in fillColor by using key 'feature'
+// and then accessing the coordinates. getting radius using key 'feature' accessing magnitude
      
 d3.json(url).then(function (data) {
     function styleInfo(feature) {
@@ -49,9 +50,9 @@ d3.json(url).then(function (data) {
             weight: 0.5
         }
     };
-
-// create function to color circles according to depth , using switch/case instead of
-// if else  
+    
+// create function getColor passing depth as argument to get color choice  
+//using switch/case instead of if else to get size 
     function getColor(depth){
         switch(true){
             case depth > 90:
@@ -69,7 +70,7 @@ d3.json(url).then(function (data) {
         }
     };
 
-// create radius funtion for size of circles based on magnitude
+// create getRadius funtion  passing magnitude as argument for size of circles 
     function getRadius(magnitude){
         if (magnitude === 0) {
             return 1;
@@ -77,7 +78,7 @@ d3.json(url).then(function (data) {
         return magnitude * 3
     }
 
-// adding features with bindPopup 
+// adding features with bindPopup to map a
     L.geoJson(data, {
         pointToLayer: function (feature, latlng){
             return L.circleMarker(latlng);
@@ -114,7 +115,7 @@ d3.json(url).then(function (data) {
             "#ea2c2c"
         ];
 
-// conditional for loop  for legend
+// conditional for loop  to render legend
         for (let i =0; i < grades.length; i++){
             div.innerHTML += "<i style='background: " + colors[i] + "'><i>"
             + grades[i] + (grades[i +1 ] ? "&ndash;" + grades[i+1]+ "<br>" : "+");
@@ -125,7 +126,7 @@ d3.json(url).then(function (data) {
 // adding to map
     legend.addTo(myMap);
 
-// getting tectonic plate info, adding features
+// getting tectonic plate info, adding features, adding to map
 let tectonicUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 d3.json(tectonicUrl).then(function (platedata){
     L.geoJson(platedata, {
