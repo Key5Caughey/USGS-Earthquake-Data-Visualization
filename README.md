@@ -15,7 +15,8 @@ they looked and sounded very interesting
 
 ## RESOURCES
 
-Notes and reviewing lessons, chatgpt, tutor session, Office hours 
+Notes and reviewing lessons, chatgpt, tutor session, Office hours                
+
 All data from USGS GeoJSON, all earthquakes past 7 days
 
 
