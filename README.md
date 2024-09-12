@@ -11,7 +11,7 @@ The USGS(United States Geological Survey) is interested in building a new set of
 - Conditional Statements: switch/case and if statements are used to determine color and size based on earthquake data.
 - Looping Structures: for loop is used to render the legend and manage the intervals for depth ranges.
 
-### All data from USGS GeoJSON, all earthquakes past 7 days
+**All data from USGS GeoJSON, all earthquakes past 7 days**
 
 ## Leaflet Challenge part 1/ Create Earthquake Visulation Map
 
