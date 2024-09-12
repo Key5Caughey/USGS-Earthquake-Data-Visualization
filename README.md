@@ -23,8 +23,8 @@ Create a legend to provide context for map.
 ## Leaflet Challenge part 2/ Gather and Plot more Data
 
 Add a tectonic plate layer to map to show better correlation between earthquakes and locations. Add a secondary control to map so 
-you are able to toggle from tectonic plates and earthquakes or have both showing. Didn't have time to do the other base maps though 
-they looked and sounded very interesting
+you are able to toggle from tectonic plates and earthquakes or have both showing. Didn't have time to do the other base
+maps, like Greyscale, though they looked and sounded very interesting
 
 ## RESOURCES
 
