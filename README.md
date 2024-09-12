@@ -26,6 +26,10 @@ Add a tectonic plate layer to map to show better correlation between earthquakes
 you are able to toggle from tectonic plates and earthquakes or have both showing. Didn't have time to do the other base
 maps, like Greyscale, though they looked and sounded very interesting
 
+![3-Data](https://github.com/user-attachments/assets/4e20b2d3-fc2f-4577-88c1-dc1906a03907)
+
+
+
 ## RESOURCES
 
 Notes and reviewing lessons, chatgpt, tutor session, Office hours                
