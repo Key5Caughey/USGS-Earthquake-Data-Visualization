@@ -4,8 +4,14 @@
 The USGS(United States Geological Survey) is interested in building a new set of tools that will allow them to visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. In this challenge, you have been tasked with developing a way to visualize USGS data that will allow them to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
 
 ## Tools and Techniques Used
-**HTML,CSS,JavaScript,Leaflet.js,D3.js**
+**HTML, CSS, JavaScript, Leaflet.js, D3.js**
+- Created an Interactive Map with Leaflet
+- Data Loading and Processing with D3.js
+- Styling Earthquake Markers Based on Data, Binding Popups to Markers, Adding a Legend
+- Conditional Statements: switch/case and if statements are used to determine color and size based on earthquake data.
+- Looping Structures: for loop is used to render the legend and manage the intervals for depth ranges.
 
+## All data from USGS GeoJSON, all earthquakes past 7 days
 
 ## Leaflet Challenge part 1/ Create Earthquake Visulation Map
 
@@ -24,6 +30,6 @@ they looked and sounded very interesting
 
 Notes and reviewing lessons, chatgpt, tutor session, Office hours                
 
-All data from USGS GeoJSON, all earthquakes past 7 days
+
 
 
